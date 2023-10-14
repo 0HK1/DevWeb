@@ -1,0 +1,27 @@
+@charset "UFT-08";
+:root{
+    --cor1:#4A1CE6;
+    --cor2:#B63FEB;
+    --cor3:#401D3A;
+    --cor4:#E6931E;
+    --cor5:#D013EB;
+    --cor6:#FFC043;
+
+    --fonte-padrão:arial,verdana,helvetica,sans-serif;
+    --fonte-alternativa:cursive,serif;
+    --fonte-global:arial,helvetica,sans-serif;
+
+}
+*{
+    margin:0px;
+    padding:0px;
+
+}
+footer{
+    background-color: var(--cor6);
+    color:white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius:5px;
+}
