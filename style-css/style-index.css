@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;900&family=Poppins&display=swap');
+
+:root{
+    --primary-color: #401D3A;
+    --secondary-color: #FFC043;
+    --letras-first-color: #000000;
+    --letras-second-color: #FFFFFF;
+    --fonte-letra-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/* Configuração dos elemento de Navegação */
+
+nav{
+    background-color: var(--secondary-color);
+    border: var(--letras-first-color) double;
+    margin: 2%;
+    padding: 1.6%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 9%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.adote{
+    color: var(--letras-first-color);
+    font-size: 1.25rem;
+    font-family: var(--fonte-letra-principal);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img_logo{
+    width: 45%;
+    height: auto;
+    display: block;
+    min-width: 25px;
+}
+.devweb{
+    color: var(--letras-first-color);
+    font-size: 0.8rem;
+    font-family: var(--fonte-letra-principal);
+    font-weight: Light;
+}
+
+.button_usability{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+.cadastro_login{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.cadastro{
+    font-family: var(--fonte-letra-principal);
+    color: var(--letras-first-color);
+}
+
+.login{
+    font-family: var(--fonte-letra-principal);
+    color: var(--letras-first-color);
+}
+
+.selecao_itens{
+    font-size: 1.7rem;
+}
+
+/*Conteúdo Principal */
+
+img{
+    width: 55%;
+    height: auto;
+}
+
+body{
+    background-color: var(--primary-color);    
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+section {
+    flex: 1; /* Isso garante que a section ocupe o espaço disponível na main */
+    display: flex;
+    flex-direction: column; /* Para empilhar os elementos verticalmente dentro da section */
+    align-items: center; /* Para centralizar os elementos horizontalmente dentro da section */
+    max-width: 800px; /* Defina a largura máxima desejada para a section */
+    margin: 0 auto; /* Isso centraliza a section na main */
+    padding: 20px; /* Adicione preenchimento conforme necessário */
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Roda Pé */
+
+footer{
+    border: var(--secondary-color) solid;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    
+    bottom: 0;
+    width: 95%;
+    padding: 2%;
+    margin: 0.35%;
+}
+
+@media screen and (max-width: 768px) {
+    .img_dog {
+        width: 65%; /* ou outro valor em porcentagem ou pixels conforme necessário */
+        height: auto;
+    }
+}
