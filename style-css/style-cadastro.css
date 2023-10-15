@@ -100,9 +100,9 @@ nav{
 /*Conteúdo Principal */
 
 .img_dog{
-    width: 100%;
-    height: auto;
-    margin: 0 0 0 10%;
+    width: 350px;
+    height: 350px;
+    margin: 0 0 0 -20%;
 }
 
 main{
@@ -115,22 +115,20 @@ main{
 
 .content{
     display: flex;
-    
     flex: 1;
     justify-content: space-around;
     gap: 15%;
 }
 
-
 /*Tela de Cadastro*/
 
-.cadastro {
+.cadastro{
     border: var(--secondary-color) solid;
     border-radius: 15px;
     background-color: var(--secondary-color);
-    padding: 0% 5% 5% 5%;
+    padding: 0% 5% 2% 5%;
     max-height: 55%;
-    margin: 0% 15% 0% 0%; /* Alterado para 0% 15% 0% 0% para colocar o formulário à esquerda */
+    margin: 0% 0% 2% 5%;
     white-space: nowrap;
 }
 
@@ -149,13 +147,9 @@ main{
 }
 
 .email{
-    padding: 0 0 6% 0;
-}
+    padding: 0 0 6% 0%;
 
-.usuario{
-    padding: 6% 0 6% 0;
 }
-
 .senha{
     padding: 0 0 6% 0;
 }
@@ -166,6 +160,7 @@ main{
     background-color: var(--letras-second-color);
     color: var(--letras-first-color);
     font-family: var(--fonte-letra-principal);
+    margin: 5% 0 0 0 ;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -216,7 +211,7 @@ footer{
     }
     .cadastro{
         margin: 5% 0 0 0;
-        padding: 0% 8%;
+        padding: 0% 7%;
     }
     .div_dog {
         display: flex;
