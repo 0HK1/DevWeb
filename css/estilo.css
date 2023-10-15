@@ -1,0 +1,29 @@
+body{
+ background-color: rgba(64, 29, 58, 1);
+ color: white
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column; /* Mudou a direção */
+    justify-content: center; /* Agora, alinhamento vertical */
+    align-items: center; /* e alinhamento horizontal */
+    width: 800px;
+    height: auto;
+    color: white;
+    background-color: rgba(242, 172, 32, 1);
+    margin: 0px auto;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    border: 1px color rgba(242, 172, 32, 1);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#adote{
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
