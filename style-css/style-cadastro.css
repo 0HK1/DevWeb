@@ -3,6 +3,7 @@
 :root{
     --primary-color: #401D3A;
     --secondary-color: #FFC043;
+    --rose-color: #AC5AA9;
     --letras-first-color: #000000;
     --letras-second-color: #FFFFFF;
     --fonte-letra-principal: 'Inter', sans-serif;
@@ -19,6 +20,15 @@ a{
     
 }
 
+body{
+    background-color: var(--primary-color);    
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Configuração dos elemento de Navegação */
 
 nav{
@@ -32,7 +42,7 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    width: 6%;
+    width: 9%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -48,8 +58,10 @@ nav{
 }
 
 .img_logo{
-    width: 25%;
+    width: 45%;
     height: auto;
+    display: block;
+    min-width: 25px;
 }
 .devweb{
     color: var(--letras-first-color);
@@ -87,18 +99,10 @@ nav{
 
 /*Conteúdo Principal */
 
-img{
-    width: 55%;
+.img_dog{
+    width: 35%;
     height: auto;
-}
-
-body{
-    background-color: var(--primary-color);    
-    min-height: 100vh;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    margin: 0 0 0 10%;
 }
 
 main{
@@ -124,13 +128,50 @@ main{
     background-color: var(--secondary-color);
     padding: 0% 5% 5% 5%;
     max-height: 55%;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 0% 0% 15%;
+    white-space: nowrap;
 }
 
 .texto_cadastro{
-    display: flex;
-    
+    padding: 0 0 17% 0;
 }
+
+.caixa_input{
+    border: none;
+    border-radius: 7px;
+    font-family: var(--fonte-letra-principal);
+    box-shadow: 2px 1px 4px 1px;
+    height: 1.6rem;
+    margin: 4% 0 0 0;
+    min-width: 100%;
+}
+
+.email{
+    padding: 0 0 6% 0;
+
+}
+.senha{
+    padding: 0 0 6% 0;
+}
+.resenha{
+    margin: 0 0 6% 0;
+}
+.button_confirmar button {
+    background-color: var(--letras-second-color);
+    color: var(--letras-first-color);
+    font-family: var(--fonte-letra-principal);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button_confirmar button:hover {
+    background-color: var(--primary-color);
+    color: var(--letras-second-color);
+}
+
 
 /* Roda Pé */
 
@@ -147,7 +188,36 @@ footer{
 
 @media screen and (max-width: 768px) {
     .img_dog {
-        width: 65%; /* ou outro valor em porcentagem ou pixels conforme necessário */
+        width: 65%; 
         height: auto;
+        margin: 0 auto;
+    }
+    .caixa_input{
+        border: none;
+        border-radius: 7px;
+        font-family: var(--fonte-letra-principal);
+        box-shadow: 2px 1px 4px 1px;
+        height: 1.6rem;
+        margin: 4% 0 0 0;
+        min-width: 85%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .cadastro{
+        margin: 5% 0 0 0;
+        padding: 0% 8%;
+    }
+    .div_dog {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .button_confirmar{
+        padding: 0 0 5% 0;
     }
 }
