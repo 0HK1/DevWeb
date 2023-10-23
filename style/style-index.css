@@ -146,6 +146,7 @@ footer{
 }
 
 footer a{
+    text-decoration: underline;
     color: var(--letras-first-color);
 }
 
