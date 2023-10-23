@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,700&family=Orelega+One&display=swap');
+
+
+body {
+    background-color: #401D3A;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.Titulo{
+    margin: 50px 20px 20px 20px;
+    font-family: 'Asap', sans-serif;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 120px 20px 20px 20px;
+    gap: 60px; /* Espaçamento entre os cards */
+}
+.card img {
+    width: 100%;
+    height: 130px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 10px ;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    margin: 0 10px 0 0;
+}
+
+p{
+    margin: 0;
+}
+
+

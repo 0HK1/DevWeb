@@ -107,11 +107,60 @@ img{
    display: block;
    margin: auto;
 }
+
+/* Roda Pé */
+
 footer{
-    background-color: var(--cor6);
-    color:white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-    border-radius:5px;
+    border: var(--cor4) solid;
+    border-radius: 15px;
+    background-color: var(--cor4);
+    
+    bottom: 0;
+    width: 95%;
+    
+    margin: 0.35%;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 99.2%;
+}
+
+footer a{
+    text-decoration: underline;
+    color: black;
+    
+}
+
+.footer_informacoes{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.footer_informacoes_pri{
+    padding: 7%;
+}
+
+.footer_informacoes_seg{
+
+    padding: 2%;
+}
+
+@media screen and (max-width: 810px) {
+    
+
+    /* Footer*/
+    .footer_informacoes {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer_informacoes_pri{
+        padding: 0%;
+    }
+    .footer_informacoes_seg{
+        padding: 2%;
+        
+    }
 }
