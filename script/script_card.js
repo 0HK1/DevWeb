@@ -58,3 +58,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cardsContainer = document.getElementById('cards-container');
+    const optionsMenu = document.querySelector('.options-menu');
+    const menuButton = document.querySelector('.menu-button');
+
+    // Inicialmente, esconde o menu de opções
+    optionsMenu.style.display = 'none';
+
+    // Adiciona um evento de clique ao botão de três pontos
+    menuButton.addEventListener('click', function () {
+        // Alterna a visibilidade do menu de opções ao clicar no botão de três pontos
+        if (optionsMenu.style.display === 'none' || optionsMenu.style.display === '') {
+            optionsMenu.style.display = 'block';
+        } else {
+            optionsMenu.style.display = 'none';
+        }
+    })})
